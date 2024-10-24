@@ -1,22 +1,23 @@
 <?php
 $module = isset($_GET['s']) ? $_GET['s'] : 'view';
 switch ($module) {
-    case 'view': default:
-        include('santri/view.php');
+    case 'view':
+    default:
+        include('guru/view.php');
         break;
     case 'add':
-        include('santri/add.php');
+        include('guru/add.php');
         break;
     case 'save':
-        include('santri/save.php');
+        include('guru/save.php');
         break;
     case 'edit':
-        include('santri/edit.php');
+        include('guru/edit.php');
         break;
     case 'update':
-        include('santri/update.php');
+        include('guru/update.php');
         break;
     case 'delete':
-        include('santri/delete.php');
+        include('guru/delete.php');
         break;
-    }
+}

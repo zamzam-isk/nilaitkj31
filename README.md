@@ -1,5 +1,5 @@
 # nilaitkj31
-materi web berbasis aplikasi
+Aplikasi Nilai TKJ Rumah Gemilang Indonesia
 
 ## Tabel Jurusan
 ## Tabel Santri

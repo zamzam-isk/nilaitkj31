@@ -15,8 +15,8 @@ switch ($module) {
     case 'mapel':
         include('mapel/index.php');
         break;
-    case 'instruktrur':
-        include('instruktrur/index.php');
+    case 'guru':
+        include('guru/index.php');
         break;
     case 'nilai':
         include('nilai/index.php');
