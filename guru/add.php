@@ -4,12 +4,12 @@
             <div class="card-header row">
                 <div class="card-title h3 col-8">Tambah Jurusan</div>
                 <div class="col-4">
-                    <a href="?m=santri&s=add" class="btn btn-lg btn-primary float-end">Kembali</a>
+                    <a href="?m=guru&s=add" class="btn btn-lg btn-primary float-end">Kembali</a>
                 </div>
             </div>
 
             <div class="card-body">
-                <form action="?m=santri&s=save" method="post">
+                <form action="?m=guru&s=save" method="post">
                     <div class="mb-3">
                         <input type="text" name="nis" class="form-control" placeholder="Nomor Induk Siswa" required autofocus>
                     </div>
@@ -36,7 +36,7 @@
                             $query = mysqli_query($con, $sql);
                             while ($r = mysqli_fetch_array($query)) {
                             ?>
-                                <option value="<?=$r['id']?>"><?=$r['name']?></option>
+                                <option value="<?= $r['id'] ?>"><?= $r['name'] ?></option>
                             <?php } ?>
                         </select>
                     </div>

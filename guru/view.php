@@ -1,36 +1,36 @@
  <div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-header row">
-                <div class="card-title h3 col-8">Data Santri</div>
-                <div class="col-4">
-                    <a href="?m=santri&s=add" class="btn btn-lg btn-primary float-end">Tambah</a>
-                </div>
-            </div>
+     <div class="col-12">
+         <div class="card">
+             <div class="card-header row">
+                 <div class="card-title h3 col-8">Data Guru</div>
+                 <div class="col-4">
+                     <a href="?m=guru&s=add" class="btn btn-lg btn-primary float-end">Tambah</a>
+                 </div>
+             </div>
 
-            <div class="card-body">
-                <table class="table table-bordered table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>NIS</th>
-                            <th>Nama</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Tempat Lahir</th>
-                            <th>Tanggal Lahir</th>
-                            <th>Jurusan</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        include_once('config.php');
-                        $sql = "SELECT students.id AS ids, students.nis, students.name AS names, students.gender, students.pob, students.dob, majors.name  AS namem FROM students JOIN majors ON majors.id=students.major_id";
-                        $result = mysqli_query($con, $sql);
-                        if (mysqli_num_rows($result)) {
-                            $no = 1;
-                            while ($r = mysqli_fetch_assoc($result)) {
-                                echo '<tr>
+             <div class="card-body">
+                 <table class="table table-bordered table-striped table-hover">
+                     <thead>
+                         <tr>
+                             <th>No</th>
+                             <th>NIS</th>
+                             <th>Nama</th>
+                             <th>Jenis Kelamin</th>
+                             <th>Tempat Lahir</th>
+                             <th>Tanggal Lahir</th>
+                             <th>Jurusan</th>
+                             <th>Aksi</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <?php
+                            include_once('config.php');
+                            $sql = "SELECT teachers.id AS ids, teachers.nis, teachers.name AS names, teachers.gender, teachers.pob, teachers.dob, majors.name  AS namem FROM teachers JOIN majors ON majors.id=teachers.major_id";
+                            $result = mysqli_query($con, $sql);
+                            if (mysqli_num_rows($result)) {
+                                $no = 1;
+                                while ($r = mysqli_fetch_assoc($result)) {
+                                    echo '<tr>
                                     <td>' . $no . '</td>
                                     <td>' . $r['nis'] . '</td>
                                     <td>' . $r['names'] . '</td>
@@ -39,24 +39,24 @@
                                     <td>' . $r['dob'] . '</td>
                                     <td>' . $r['namem'] . '</td>
                                     <td>
-                                        <a href="?m=santri&s=edit&id=' . $r['ids'] . '" class="btn btn-lg btn-warning btn-sm">Edit</a>
-                                        <a href="?m=santri&s=delete&id=' . $r['ids'] . '" class="btn btn-lg btn-danger btn-sm" onclick="return confirm(\'Seriussan..!? Oalahhh, yaudah. Tapi, Menghapus santri akan menghilangkan semua data santri pada santri tersebut.\')">Hapus</a>
+                                        <a href="?m=guru&s=edit&id=' . $r['ids'] . '" class="btn btn-lg btn-warning btn-sm">Edit</a>
+                                        <a href="?m=guru&s=delete&id=' . $r['ids'] . '" class="btn btn-lg btn-danger btn-sm" onclick="return confirm(\'Seriussan..!? Oalahhh, yaudah. Tapi, Menghapus guru akan menghilangkan semua data guru pada guru tersebut.\')">Hapus</a>
                                         
                                     </td>
                                 </tr>';
-                                $no++;
-                            }
-                        } else {
-                            echo '<tr>
+                                    $no++;
+                                }
+                            } else {
+                                echo '<tr>
                                     <td colspan="8" align="center">Data Kosong</td>
                                 </tr>';
-                        }
+                            }
 
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+                            ?>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     </div>
+ </div>
+ </div>

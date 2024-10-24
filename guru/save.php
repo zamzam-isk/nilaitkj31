@@ -8,16 +8,16 @@ if (isset($_POST['save'])) {
     $dob = $_POST['dob'];
     $major_id = $_POST['major_id'];
 
-    $sql = "INSERT INTO students SET nis='$nis', name='$name', gender='$gender', pob='$pob', dob='$dob', major_id='$major_id'";
+    $sql = "INSERT INTO teachers SET nis='$nis', name='$name', gender='$gender', pob='$pob', dob='$dob', major_id='$major_id'";
     $result = mysqli_query($con, $sql);
     if ($result) {
-        header('location: ?m=santri');
+        header('location: ?m=guru');
     } else {
-        include('index.php?m=santri');
+        include('index.php?m=guru');
         echo '<script language="JavaSricpt">';
         echo 'alert ("Data gagal ditambahkan")';
         echo '</script>';
     }
 } else {
-    echo "Eits Tidak Boleehhh... kamu  klik aja <a href='?m=santri&s=add'>disini</a>";
+    echo "Eits Tidak Boleehhh... kamu  klik aja <a href='?m=guru&s=add'>disini</a>";
 }
