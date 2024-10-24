@@ -32,7 +32,7 @@
                         <a class="nav-link" href="?m=mapel">Mata Diklat</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?m=instruktur">Instruktur</a>
+                        <a class="nav-link" href="?m=guru">Instruktur</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?m=nilai">Nilai</a>
