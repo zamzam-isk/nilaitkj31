@@ -2,7 +2,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header row">
-                <div class="card-title h3 col-8">BIdang Jurusan</div>
+                <div class="card-title h3 col-8">Bidang Jurusan</div>
                 <div class="col-4">
                     <a href="?m=guru&s=add" class="btn btn-lg btn-primary float-end">Kembali</a>
                 </div>
@@ -17,7 +17,7 @@
                         <input type="text" name="name" class="form-control" placeholder="Nama" required>
                     </div>
                     <div class="mb-3">
-                        <label for="">Jenip Kelamin : </label>&nbsp;
+                        <label for="">Jenis Kelamin : </label>&nbsp;
                         <input type="radio" name="gender" value="Laki-laki" required>Laki-laki
                         <input type="radio" name="gender" value="Perempuan" required>Perempuan
                     </div>

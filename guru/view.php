@@ -15,7 +15,7 @@
                              <th>No</th>
                              <th>NIP</th>
                              <th>Nama</th>
-                             <th>Jenip Kelamin</th>
+                             <th>Jenis Kelamin</th>
                              <th>Tempat Lahir</th>
                              <th>Tanggal Lahir</th>
                              <th>Bidang Jurusan</th>

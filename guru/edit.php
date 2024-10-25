@@ -23,7 +23,7 @@
                         <input type="text" name="name" value="<?= $r['name'] ?>" class="form-control" placeholder="Nama Guru" required>
                     </div>
                     <div class="mb-3">
-                        <label for="">Jenip Kelamin : </label>&nbsp;
+                        <label for="">Jenis Kelamin : </label>&nbsp;
                         <input type="radio" name="gender" value="Laki-laki" <?= $r['gender'] == 'Laki-laki' ? 'checked' : '' ?>>Laki-laki
                         <input type="radio" name="gender" value="Perempuan" <?= $r['gender'] == 'Perempuan' ? 'checked' : '' ?>>Perempuan
                     </div>
