@@ -2,14 +2,14 @@
 if (isset($_POST['update'])) {
     include_once('config.php');
     $id = $_POST['id'];
-    $nis = $_POST['nis'];
+    $nip = $_POST['nip'];
     $name = $_POST['name'];
     $gender = $_POST['gender'];
     $pob = $_POST['pob'];
     $dob = $_POST['dob'];
     $major_id = $_POST['major_id'];
 
-    $sql = "UPDATE teachers SET nis='$nis', name='$name', gender='$gender', pob='$pob', dob='$dob', major_id='$major_id' WHERE id='$id'";
+    $sql = "UPDATE teachers SET nip='$nip', name='$name', gender='$gender', pob='$pob', dob='$dob', major_id='$major_id' WHERE id='$id'";
     $result = mysqli_query($con, $sql);
     if ($result) {
         //var_dump($sql);

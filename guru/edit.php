@@ -17,13 +17,13 @@
             <div class="card-body">
                 <form action="?m=guru&s=update" method="post">
                     <div class="mb-3">
-                        <input type="number" name="nis" value="<?= $r['nis'] ?>" class="form-control" placeholder="Nomor Induk Guru" required autofocus>
+                        <input type="number" name="nip" value="<?= $r['nip'] ?>" class="form-control" placeholder="Nomor Induk" required autofocus>
                     </div>
                     <div class="mb-3">
                         <input type="text" name="name" value="<?= $r['name'] ?>" class="form-control" placeholder="Nama Guru" required>
                     </div>
                     <div class="mb-3">
-                        <label for="">Jenis Kelamin : </label>&nbsp;
+                        <label for="">Jenip Kelamin : </label>&nbsp;
                         <input type="radio" name="gender" value="Laki-laki" <?= $r['gender'] == 'Laki-laki' ? 'checked' : '' ?>>Laki-laki
                         <input type="radio" name="gender" value="Perempuan" <?= $r['gender'] == 'Perempuan' ? 'checked' : '' ?>>Perempuan
                     </div>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="mb-3">
                         <select name="major_id" class="form-control" id="required">
-                            <option value="">- Pilih Jurusan -</option>
+                            <option value="">- BIdang Jurusan -</option>
                             <?php
                             $sql2 = "SELECT id, name FROM majors";
                             $query2 = mysqli_query($con, $sql2);

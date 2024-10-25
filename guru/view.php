@@ -13,12 +13,12 @@
                      <thead>
                          <tr>
                              <th>No</th>
-                             <th>NIS</th>
+                             <th>NIP</th>
                              <th>Nama</th>
-                             <th>Jenis Kelamin</th>
+                             <th>Jenip Kelamin</th>
                              <th>Tempat Lahir</th>
                              <th>Tanggal Lahir</th>
-                             <th>Jurusan</th>
+                             <th>Bidang Jurusan</th>
                              <th>Aksi</th>
                          </tr>
                      </thead>
@@ -32,7 +32,7 @@
                                 while ($r = mysqli_fetch_assoc($result)) {
                                     echo '<tr>
                                     <td>' . $no . '</td>
-                                    <td>' . $r['nis'] . '</td>
+                                    <td>' . $r['nip'] . '</td>
                                     <td>' . $r['names'] . '</td>
                                     <td>' . $r['gender'] . '</td>
                                     <td>' . $r['pob'] . '</td>
