@@ -25,7 +25,7 @@
                      <tbody>
                          <?php
                             include_once('config.php');
-                            $sql = "SELECT teachers.id AS ids, teachers.nis, teachers.name AS names, teachers.gender, teachers.pob, teachers.dob, majors.name  AS namem FROM teachers JOIN majors ON majors.id=teachers.major_id";
+                            $sql = "SELECT * FROM teachers";
                             $result = mysqli_query($con, $sql);
                             if (mysqli_num_rows($result)) {
                                 $no = 1;
